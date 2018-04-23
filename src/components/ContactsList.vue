@@ -6,7 +6,6 @@
       <input v-model="newContact.lastName" type="text" placeholder="Last Name">
       <input v-model="newContact.email" type="email" placeholder="Email">
       <button>Add contact</button>
-      <button @click="removeContact(contact)">Remove contact</button>
     </form>
     <table>
       <thead>
@@ -20,6 +19,8 @@
           <td>{{ contact.firstName }}</td>
           <td>{{ contact.lastName }}</td>
           <td>{{ contact.email }}</td>
+          <td><button @click="removeContact(contact)">Remove contact</button></td>
+
         </tr>
       </tbody>
     </table>
