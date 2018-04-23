@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ContactsList/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ContactsList from './components/ContactsList.vue'
 
 export default {
   name: 'app',
+  // navodimo koje komponente moze da koristi u svom template
   components: {
-    HelloWorld
+    // ContactsList: ContactsList
+    // ako je key name = value name moze shortcut:
+    ContactsList
   }
 }
 </script>
