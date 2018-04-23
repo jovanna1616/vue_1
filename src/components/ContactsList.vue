@@ -6,12 +6,14 @@
       <input v-model="newContact.lastName" type="text" placeholder="Last Name">
       <input v-model="newContact.email" type="email" placeholder="Email">
       <button>Add contact</button>
+      <button @click="removeContact(contact)">Remove contact</button>
     </form>
     <table>
       <thead>
         <th>First name</th>
         <th>Last name</th>
         <th>Email</th>
+        <th>&nbsp;</th>
       </thead>
       <tbody>
         <tr v-for="(contact, key) in contacts" :key="key">
@@ -53,8 +55,10 @@ export default {
         lastName: '',
         email: ''
       }
+    },
+    removeContact(contact) {
+      this.contacts.splice(this.contacts.indexOf(contact));
     }
-
   }
 }
 </script>
