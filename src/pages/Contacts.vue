@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <ContactsList/>
+            <ContactsList :contacts="contacts"/>
         </div>
         <div class="col">
             <ContactDetails/>
@@ -19,6 +19,15 @@ export default {
     components: {
         ContactsList,
         ContactDetails
+    },
+    data() {
+        return {
+            contacts: [
+                { name: 'John Doe' },
+                { name: 'Jane Doe' },
+                { name: 'Mark Black' },
+            ]
+        }
     }
 }
 </script>
