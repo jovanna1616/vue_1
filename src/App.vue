@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-    <button class="btn btn-primary">Hello bootstrap</button>
+    <NavBar/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import ContactsList from './components/ContactsList.vue'
+import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'app',
-  // navodimo koje komponente moze da koristi u svom template
   components: {
-    // ContactsList: ContactsList
-    // ako je key name = value name moze shortcut:
-    ContactsList
+    NavBar
   }
 }
 </script>
