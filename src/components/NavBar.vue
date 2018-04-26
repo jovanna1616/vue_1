@@ -1,24 +1,15 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">My App</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand" href="#">My Contacts</a>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <router-link class="nav-item nav-link" to="contacts">Contacts <span class="sr-only">(current)</span></router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Add contact</a>
+          <router-link class="nav-item nav-link" to="add-contact">Add contact <span class="sr-only">(current)</span></router-link>
         </li>
       </ul>
-      <!-- <span class="navbar-text">
-      Navbar text with an inline element
-    </span> -->
   </div>
 </nav>
 </template>

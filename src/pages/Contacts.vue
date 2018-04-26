@@ -1,5 +1,5 @@
 <template>
-  
+<div>contacts page works</div>
 </template>
 
 <script>

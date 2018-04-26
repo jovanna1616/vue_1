@@ -1,5 +1,6 @@
 <template>
-  
+  <div>add contacts page works</div>
+
 </template>
 
 <script>
